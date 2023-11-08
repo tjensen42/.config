@@ -1,0 +1,6 @@
+[user]
+    name = Tim Jensen
+    email = 56789534+tjensen42@users.noreply.github.com
+	
+[core]
+    excludesfile = ~/.config/git/ignore
