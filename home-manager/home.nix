@@ -5,24 +5,35 @@
   home.homeDirectory = "/home/tjensen";
 
   home.packages = [
+    # Dev
     pkgs.fish
     pkgs.zellij
     pkgs.starship
     pkgs.helix
 
-    pkgs.zoxide
+    # C / C++
+    pkgs.clang_16
+    pkgs.lld_16
+
+    # Rust cli
     pkgs.bat
-    pkgs.fzf
-    pkgs.ripgrep
-    pkgs.git
-    pkgs.fd
-    pkgs.eza
+    pkgs.dogdns
     pkgs.du-dust
+    pkgs.eza
+    pkgs.fd
     pkgs.hyperfine
-    pkgs.manix
-    pkgs.jq
+    pkgs.procs
+    pkgs.ripgrep
     pkgs.sd
-    
+    pkgs.tokei
+    pkgs.zoxide
+
+    # Additional
+    pkgs.git
+    pkgs.fzf    
+    pkgs.jq
+
+    # Fonts
     (pkgs.nerdfonts.override { fonts = [ "Noto" ]; })
   ];
 
