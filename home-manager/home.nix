@@ -34,6 +34,7 @@
 
     # Additional
     pkgs.git
+    pkgs.gitui
     pkgs.fzf    
     pkgs.jq
     pkgs.python3

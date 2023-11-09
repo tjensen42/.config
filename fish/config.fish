@@ -15,7 +15,7 @@ alias cd-old="builtin cd"
 alias cd="z"
 
 alias ls-old="command ls"
-alias ls="eza"
+alias ls="eza --icons -H --group-directories-first"
 
 alias cat-old="command cat"
 alias cat="bat"
