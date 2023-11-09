@@ -37,6 +37,7 @@
     pkgs.gitui
     pkgs.fzf    
     pkgs.jq
+    pkgs.lsof
     pkgs.python3
     
     # Fonts
