@@ -14,9 +14,10 @@
     pkgs.rustup
 
     # C / C++
-    pkgs.clang_16
     pkgs.lld_16
     pkgs.lldb_16
+    pkgs.clang_16
+    pkgs.clang-tools_16
     pkgs.gnumake
     pkgs.cmake
     
@@ -39,8 +40,26 @@
     pkgs.fzf    
     pkgs.jq
     pkgs.lsof
-    pkgs.python3
+    pkgs.neofetch
+
     pkgs.nodejs_21
+    pkgs.python3
+
+    # Language Server
+    pkgs.nodePackages_latest.typescript-language-server
+    pkgs.python311Packages.python-lsp-server        
+    pkgs.marksman
+    pkgs.vscode-langservers-extracted
+    pkgs.taplo
+    pkgs.nodePackages_latest.bash-language-server
+    pkgs.yaml-language-server
+    pkgs.lua-language-server
+    pkgs.cmake-language-server
+    pkgs.dockerfile-language-server-nodejs
+
+    # Manpages
+    pkgs.llvmPackages_16.llvm-manpages
+    pkgs.llvmPackages_16.lldb-manpages
     
     # Fonts
     (pkgs.nerdfonts.override { fonts = [ "RobotoMono" ]; })
