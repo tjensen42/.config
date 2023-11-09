@@ -9,6 +9,7 @@ window:
 
 env:
   TERM: xterm-256color
+  LC_CTYPE: en_US.UTF-8
 
 scrolling:
   history: 100000
