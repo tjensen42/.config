@@ -1,5 +1,13 @@
+add_newline = false
+
+format = """$directory$character"""
+right_format = """$all"""
+
 [username]
 disabled = true
 
 [hostname]
+disabled = true
+
+[package]
 disabled = true

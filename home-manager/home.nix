@@ -10,11 +10,14 @@
     pkgs.zellij
     pkgs.starship
     pkgs.helix
+    pkgs.rustup
 
     # C / C++
     pkgs.clang_16
     pkgs.lld_16
-
+    pkgs.gnumake
+    pkgs.cmake
+    
     # Rust cli
     pkgs.bat
     pkgs.dogdns
@@ -32,7 +35,8 @@
     pkgs.git
     pkgs.fzf    
     pkgs.jq
-
+    pkgs.python3
+    
     # Fonts
     (pkgs.nerdfonts.override { fonts = [ "Noto" ]; })
   ];

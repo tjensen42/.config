@@ -1,0 +1,19 @@
+import:
+  - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
+
+window:
+  decorations: none
+
+env:
+  TERM: xterm-256color
+
+scrolling:
+  history: 100000
+  multiplier: 3
+
+font:
+  normal:
+    family: "Noto Sans Mono"
+    use_thin_strokes: true
+    
+draw_bold_text_with_bright_colors: false
