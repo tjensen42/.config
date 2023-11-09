@@ -1,30 +1,33 @@
 starship init fish | source
 zoxide init fish | source
 
-#########
-# Alias #
-#########
-
-# Base
 alias hm="home-manager"
 alias hxf="hx ~/.config/fish/config.fish"
 alias hxc="hx ~/.config/"
 alias config-update="cd ~/.config/ && git pull && hm switch && cd -"
-# Rust cli
-alias cd-old="builtin cd"
-alias cd="z"
 
-alias ls-old="command ls"
-alias ls="eza --icons -H --group-directories-first"
-alias lla="ll -a"
+if functions -q z
+    alias cd="z"
+end
 
-alias cat-old="command cat"
-alias cat="bat"
+if command -q eza
+    alias ls="eza --icons -H --group-directories-first"
+    alias l="ls"
+    alias ll="ls -l"
+    alias lla="ls -la"
+end
 
+if command -q bat
+    alias cat="bat"
+end
 
-#########
-# Color #
-#########
+abbr -a gcl 'git clone --recurse-submodules -j4'
+abbr -a gco 'git checkout'
+abbr -a gp  'git pull'
+abbr -a gpr 'git pull --rebase --autostash'
+abbr -a gc  'git commit -m'
+abbr -a gs  'git submodule update --init'
+abbr -a ga  'git add -p'
 
 # Fish syntax highlighting
 set -g fish_color_autosuggestion '555'  'brblack'
@@ -48,3 +51,4 @@ set -g fish_color_search_match 'bryellow'  '--background=brblack'
 set -g fish_color_selection 'white'  '--bold'  '--background=brblack'
 set -g fish_color_user brgreen
 set -g fish_color_valid_path --underline
+

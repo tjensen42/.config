@@ -7,6 +7,7 @@
   home.packages = [
     # Dev
     pkgs.alacritty
+    pkgs.wezterm
     pkgs.fish
     pkgs.zellij
     pkgs.starship
