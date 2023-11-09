@@ -16,6 +16,7 @@
     # C / C++
     pkgs.clang_16
     pkgs.lld_16
+    pkgs.lldb_16
     pkgs.gnumake
     pkgs.cmake
     
@@ -39,6 +40,7 @@
     pkgs.jq
     pkgs.lsof
     pkgs.python3
+    pkgs.nodejs_21
     
     # Fonts
     (pkgs.nerdfonts.override { fonts = [ "RobotoMono" ]; })

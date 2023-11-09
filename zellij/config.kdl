@@ -1,5 +1,4 @@
 pane_frames false
-default_layout "compact"
-
+// default_layout "compact"
 copy_on_select false
 
