@@ -29,6 +29,8 @@ abbr -a gc  'git commit -m'
 abbr -a gs  'git submodule update --init'
 abbr -a ga  'git add -p'
 
+abbr -a font-test 'curl -s https://gist.githubusercontent.com/thomasba/0bd02c9a01d9331c9228754e970e6987/raw/26f5b4a73796ef71a8d89dbadce7345151f767fb/colors.sh | bash'
+
 # Fish syntax highlighting
 set -g fish_color_autosuggestion '555'  'brblack'
 set -g fish_color_cancel -r
