@@ -9,13 +9,14 @@ zoxide init fish | source
 alias hm="home-manager"
 alias hxf="hx ~/.config/fish/config.fish"
 alias hxc="hx ~/.config/"
-
+alias config-update="cd ~/.config/ && git pull && hm switch && cd -"
 # Rust cli
 alias cd-old="builtin cd"
 alias cd="z"
 
 alias ls-old="command ls"
 alias ls="eza --icons -H --group-directories-first"
+alias lla="ll -a"
 
 alias cat-old="command cat"
 alias cat="bat"
