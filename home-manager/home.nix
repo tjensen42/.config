@@ -24,6 +24,11 @@
     pkgs.sd
   ];
 
+  fonts.fontconfig.enable = true;
+  home.packages = [
+    (pkgs.nerdfonts.override { fonts = [ "Noto Mono" ]; })
+  ];
+
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
   home.stateVersion = "23.05";
