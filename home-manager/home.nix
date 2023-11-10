@@ -22,12 +22,11 @@
     pkgs.manix
     pkgs.jq
     pkgs.sd
+    
+    (pkgs.nerdfonts.override { fonts = [ "Noto Mono" ]; })
   ];
 
   fonts.fontconfig.enable = true;
-  home.packages = [
-    (pkgs.nerdfonts.override { fonts = [ "Noto Mono" ]; })
-  ];
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
