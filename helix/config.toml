@@ -1,8 +1,5 @@
 theme = "onedark"
 
-[editor.file-picker]
-hidden = false
-
 [editor]
 line-number = "relative"
 mouse = true
