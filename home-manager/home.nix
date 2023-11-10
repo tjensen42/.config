@@ -23,7 +23,7 @@
     pkgs.jq
     pkgs.sd
     
-    (pkgs.nerdfonts.override { fonts = [ "Noto Mono" ]; })
+    (pkgs.nerdfonts.override { fonts = [ "Noto" ]; })
   ];
 
   fonts.fontconfig.enable = true;
