@@ -38,7 +38,7 @@
     pkgs.python3
     
     # Fonts
-    (pkgs.nerdfonts.override { fonts = [ "Noto" ]; })
+    (pkgs.nerdfonts.override { fonts = [ "RobotoMono" ]; })
   ];
 
   fonts.fontconfig.enable = true;
