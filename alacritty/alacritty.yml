@@ -13,7 +13,8 @@ scrolling:
 
 font:
   normal:
-    family: "Noto Sans Mono"
-    use_thin_strokes: true
-    
+    family: "RobotoMono Nerd Font"
+    style: Regular
+  size: 18.0
+  
 draw_bold_text_with_bright_colors: false
